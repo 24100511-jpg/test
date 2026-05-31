@@ -15,7 +15,7 @@ app.get('/api/student', async (req, res) => {
         res.status(500).json({ message: 'Lỗi lấy dữ liệu', error: error.message });
     }
 });
-
+// bài tập về nhà
 // 2. CREATE - Thêm sinh viên
 app.post('/api/student', async (req, res) => {
     const { SID, SNAME, EMAIL, Tutor_Id = NULL } = req.body;
